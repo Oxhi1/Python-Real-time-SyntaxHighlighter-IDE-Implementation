@@ -162,7 +162,6 @@ Parser sınıfı üzerinden kod parse edilir, hata varsa kullanıcıya gösteril
 
 
 
-Geliştirici
-Ad Soyad: Abdullah Çelik
+
 
 
