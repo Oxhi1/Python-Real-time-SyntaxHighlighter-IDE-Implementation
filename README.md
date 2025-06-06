@@ -34,12 +34,12 @@ Parse hatası üreten örnek:
 def foo(x)
     return x +
 
-KOD BAZLI AÇIKLAMA
+## KOD BAZLI AÇIKLAMA
 🔹 tokenize(code) – Lexical Analyzer
 Amaç:
 Kullanıcının yazdığı kodu satır satır okuyarak, her parçayı (token) tanımlar. Bu token'lar daha sonra parser tarafından analiz edilecektir.
 
-Token Türleri:
+## Token Türleri:
 
 KEYWORD: if, else, while, def, return
 
@@ -57,7 +57,7 @@ COMMENT: # ile başlayan satır sonu yorumları
 
 NEWLINE: Satır geçişi
 
-Nasıl çalışır?
+## Nasıl çalışır?
 
 Kod satır satır gezilir
 
@@ -68,10 +68,10 @@ Regex kullanılarak string, sayı, identifier, yorum gibi yapılar ayrıştırı
 Uyumlu token bulunduğunda listeye eklenir
 
 🔹 Parser Sınıfı – Top-Down Recursive Descent Parser
-Amaç:
+##Amaç:
 Token’ları gramatik kurallara göre analiz eder. Kurallar önceden belirlenmiştir ve parser bu kurallara göre her ifadeyi adım adım çözümlemeye çalışır.
 
-Yapı:
+##Yapı:
 
 self.tokens: Token listesi
 
@@ -102,7 +102,7 @@ Parantez
 
 Toplama-çıkarma
 
-Karşılaştırma operatörleri
+## Karşılaştırma operatörleri
 
 🔸 expect() ve match()
 Token’ın beklenen tipte olup olmadığını kontrol eder.
@@ -112,10 +112,10 @@ expect: Değilse hata fırlatır (zorunlu)
 match: Uygunsa ilerler, değilse pas geçer (isteğe bağlı)
 
 🔹 SyntaxHighlighter Sınıfı (GUI Sınıfı – tkinter)
-Amaç:
+## Amaç:
 Kullanıcıya görsel olarak yazdığı kodu renklendirmek ve anlık olarak hataları göstermek.
 
-Yapı:
+## Yapı:
 
 Text alanı: Kodun yazıldığı yer
 
@@ -137,7 +137,7 @@ Yorumlar gri
 
 Hatalı token'lar pembe arka planlı
 
-Fonksiyonlar:
+## Fonksiyonlar:
 
 🔸 on_change(event)
 Kullanıcı yazdıkça tetiklenir. Highlight işlemini 100ms gecikmeli başlatır.
